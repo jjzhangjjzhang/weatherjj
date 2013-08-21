@@ -15,7 +15,6 @@
         android:layout_marginRight="32dp"
         android:layout_marginTop="56dp"
         android:orientation="vertical" >
-
     </LinearLayout>
 
     <EditText
@@ -24,8 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_alignTop="@+id/linearLayout1"
-        android:hint="@string/inputZip"
-        android:ems="10" />
+        android:ems="10"
+        android:hint="@string/inputZip" />
 
     <Button
         android:id="@+id/button1"
@@ -35,13 +34,6 @@
         android:layout_toRightOf="@+id/editText1"
         android:onClick="sendMessage"
         android:text="OK" />
-
-    <AnalogClock
-        android:id="@+id/analogClock1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/editText3" />
 
     <EditText
         android:id="@+id/editText3"
@@ -68,6 +60,47 @@
         android:layout_alignRight="@+id/button1"
         android:layout_marginBottom="29dp"
         android:layout_marginRight="18dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="66dp"
+        android:text="@string/HisWea" />
+
+    <EditText
+        android:id="@+id/queryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView01"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/button1"
+        android:ems="10"
+        android:hint="@string/inputZip" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/queryOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/queryText"
+        android:layout_alignBottom="@+id/queryText"
+        android:layout_toRightOf="@+id/queryText"
+        android:onClick="queryWeather"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/queryOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/queryText"
+        android:layout_marginTop="19dp"
+        android:layout_toLeftOf="@+id/queryOk"
         android:ems="10" />
 
 </RelativeLayout>

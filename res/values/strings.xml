@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
      <string name="inputZip">Input your zip code here</string>
      <string name="weatherTitle">Welcome to the weather report channel!</string>
+     <string name="HisWea">What\'s history weather?</string>
 
 </resources>
